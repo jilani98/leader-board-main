@@ -131,46 +131,38 @@ hr {
     grid-column-gap: 24px;
 }
 
-
 /* for mobile device */
+@media screen and (max-width:688px) {
 
-@media only screen and (max-width:688px) {
-    .container {
-        width: 100%;
-    }
-
-    .players,
     .blogs,
+    .players,
     .courses {
         grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .container {
+        width: 100%;
     }
 
     .player,
     .blog {
         flex-direction: column;
-
-
-
     }
+
 
 
 }
 
-@media only screen and (min-width:688px) and (max-width:992px) {
-    .container {
-        width: 100%;
-    }
+@media screen and (min-width:689px) and (max-width:992px) {
 
     .players,
     .courses {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .blogs {
-        grid-template-columns: repeat(1, 1fr);
 
     }
 
-
-
+    .container {
+        width: 100%;
+    }
 }
